@@ -1,0 +1,100 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.one{
+  display: flex;
+}
+.burger{
+  height: 40px;
+  width: 38px;
+  z-index: 1;
+  position: relative;
+  float: right;
+  margin-right: 80px;
+  margin-top: 65px;
+  cursor: pointer;
+}
+
+.burger span {
+  height: 4px; 
+  background-color: #27ae60;
+  width: 100%; 
+  position: absolute;
+  top: 20px;
+  left: 0;
+ 
+}
+
+.burger span:after {
+  content: "";
+  height: 4px; 
+  background-color: #27ae60;
+  width: 60%; 
+  position: absolute;
+  top: -13px;
+  left: 13px;
+  
+}
+
+.burger.anime span {
+  height: 4px; 
+  background-color: #E42318;
+  width: 100%; 
+  position: absolute;
+  top: 20px;
+  left: 0;
+  transform: rotate(45deg);
+  transition-duration: 0.4s;
+
+} 
+
+.burger.anime span:after {
+  content: "";
+  height: 4px; 
+  background-color: #E42318;
+  width: 100%; 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: rotate(-90deg);
+  transition-duration: 0.4s;
+}
+
+.menu1 {
+  height: 849px;
+  background-color: #2d3436;
+  width: 220px;
+  margin-left: 1706px;
+  position: fixed;
+}
+
+.menu2 {
+  height: 849px;
+  z-index: 2;
+  background-color: #8e44ad;
+  width: 500px;
+  position: fixed;
+
+  }
+
+.menu2 li {
+  color: white;
+  font-size: 20px;  
+  list-style: none;
+  padding-top: 10px;
+
+
+}
+  .nav {
+    margin-left: 2000px;
+    transition-duration: 0.5s;
+
+  }
+
+  .nav_open {
+    margin-left: 1700px;
+    transition-duration: 0.5s;  
+  }
