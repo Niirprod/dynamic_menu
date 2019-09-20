@@ -4,23 +4,20 @@ html, body {
   overflow-x: hidden;
 }
 
-.one{
-  display: flex;
-}
-.burger{
+.burger {
   height: 40px;
   width: 38px;
-  z-index: 1;
-  position: relative;
+  z-index: 3;
+  position: absolute;
   float: right;
-  margin-right: 80px;
+  margin-left: 1800px;
   margin-top: 65px;
   cursor: pointer;
 }
 
 .burger span {
   height: 4px; 
-  background-color: #27ae60;
+  background-color: #FFFFFF;
   width: 100%; 
   position: absolute;
   top: 20px;
@@ -31,13 +28,25 @@ html, body {
 .burger span:after {
   content: "";
   height: 4px; 
-  background-color: #27ae60;
+  background-color: #FFFFFF;
   width: 60%; 
   position: absolute;
   top: -13px;
   left: 13px;
-  
+
 }
+
+.burger:hover span {
+  transform: translateY(-5px);
+  transition-duration: 0.4s;
+
+}
+
+.burger:hover span:after {
+  transform: translateY(13px);
+  transition-duration: 0.4s;
+  
+   }
 
 .burger.anime span {
   height: 4px; 
@@ -47,7 +56,7 @@ html, body {
   top: 20px;
   left: 0;
   transform: rotate(45deg);
-  transition-duration: 0.4s;
+  transition-duration: 0.5s;
 
 } 
 
@@ -60,41 +69,71 @@ html, body {
   top: 0px;
   left: 0px;
   transform: rotate(-90deg);
-  transition-duration: 0.4s;
+  transition-duration: 0.5s;
 }
 
 .menu1 {
-  height: 849px;
-  background-color: #2d3436;
+  height: 949px;
+  background-color: #171717;
   width: 220px;
   margin-left: 1706px;
-  position: fixed;
+  position: absolute;
 }
 
 .menu2 {
-  height: 849px;
+  height: 949px;
   z-index: 2;
-  background-color: #8e44ad;
-  width: 500px;
-  position: fixed;
+  background-color: #FFFFFF;
+  width: 220px;
+  position: absolute;
+}
 
+  .sp {
+    margin-top: 200px;
   }
 
 .menu2 li {
-  color: white;
+  color: #2c3e50;
   font-size: 20px;  
   list-style: none;
-  padding-top: 10px;
-
-
+  padding-top: 20px;
+  margin-left: 40px;
 }
+
+.menu3 li {
+  color: #FFFFFF;
+  font-size: 40px;  
+  list-style: none;
+  padding-top: 20px;
+  margin-left: 250px;
+}
+
+.menu3 {
+  height: 949px;
+  width: 1950px;
+  z-index: 1;
+  background-color: #E42318;
+  position: absolute;
+}
+
+
   .nav {
     margin-left: 2000px;
-    transition-duration: 0.5s;
+    transition-duration: 1s;
 
   }
 
   .nav_open {
     margin-left: 1700px;
     transition-duration: 0.5s;  
+  }
+
+  .nav2 {
+    margin-left: 1920px;  
+    transition-duration: 0.3s;
+
+  }
+  .nav2_open {
+    margin-left: 0;
+    transition-delay: 0.1s;  
   }
